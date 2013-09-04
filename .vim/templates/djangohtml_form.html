@@ -1,0 +1,14 @@
+{% extends "[:VIM_EVAL:]substitute(expand("%:p:h"), ".*/templates/","",'g')[:END_EVAL:]/base.html" %}
+{% load bootstrap_toolkit %}
+{% block content %}
+
+<h1></h1>
+<p></p>
+<form method="post" class="well" action="" >
+  {% csrf_token %}
+  {{ form|as_bootstrap }}
+  <div class="actions">
+    <button type="submit" class="btn btn-primary"><i class="icon-ok icon-white" ></i> valider</button>
+  </div>
+</form>
+{% endblock %}

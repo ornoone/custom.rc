@@ -1,0 +1,4 @@
+{% extends "[:VIM_EVAL:]substitute(expand("%:p:h"), ".*/templates/","",'g')[:END_EVAL:]/base.html" %}
+{% block content %}
+
+{% endblock %}
