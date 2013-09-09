@@ -1,4 +1,3 @@
-
 " reglages commun {{{1
 
 set softtabstop=2
@@ -55,10 +54,12 @@ set t_Co=256
 " beep quand une erreur se trouve dans la syntaxe.
 set showmatch
 set matchtime=1
-let g:pydiction_location='/home/darius/.vim/complete-dict'
+
 
 au BufWinLeave * mkview
 au BufWinEnter * silent loadview
+
+autocmd BufNewFile,BufReadPre,FileReadPre        /etc/nginx/site*/* set ft=nginx
 
 " Afficher la barre d'état
 set laststatus=2
