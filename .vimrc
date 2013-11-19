@@ -6,7 +6,7 @@ set ts=2
 "affiche numero de ligne
 set nu 
 
-let mapleader = "<space>""
+let mapleader = ","
 "active l'indentation en fonction du fichier
 filetype indent on
 filetype plugin indent on
