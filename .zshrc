@@ -3308,7 +3308,7 @@ zrclocal
 
 
 
-
+export LESS=-r
 
 ## genrefcard.pl settings
 
