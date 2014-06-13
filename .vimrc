@@ -225,7 +225,7 @@ nmap t  :TlistToggle<CR>
 " mes fonction {{{2
 
 " }}}2
-call pathogen#infect()
+" call pathogen#infect()
 
 
 " configure tags - add additional tags here or comment out not-used ones
