@@ -1,0 +1,18 @@
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+alias workon.='workon $(basename $(pwd))'
+
+alias yEd='docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/Documents/yed/:/home/user/docs  yed:latest  /home/user/yEd/yEd'
+alias ds='docker service'
+alias dr='docker run --rm -it'
+alias de='docker exec -it'
+alias dexec='docker exec -it'
+stty -ixon -ixoff
+
+source ~/.zshrc.func
+
+
+alias rsync='rsync --progress --human-readable'
+alias du='du -h --max-depth 1'
+alias generepasswd='apg -q -a  0 -n 1 -M NCLS'
+test -f ~/.dircolors && eval $(dircolors ~/.dircolors)
+
