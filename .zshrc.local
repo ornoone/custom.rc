@@ -8,7 +8,7 @@ alias dexec='docker exec -it'
 stty -ixon -ixoff
 
 source ~/.zshrc.func
-
+source ~/.zshrc.grml
 
 alias rsync='rsync --progress --human-readable'
 alias du='du -h --max-depth 1'
