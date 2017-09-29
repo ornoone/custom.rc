@@ -78,3 +78,5 @@ if [[ -r /etc/debian_version ]] ; then
     salias tlog="tail -f /var/log/syslog"    # follow the syslog
 fi
 
+zstyle ':completion:*' special-dirs true
+
