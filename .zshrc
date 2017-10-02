@@ -107,4 +107,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/.zshrc.local
+echo ${(%):-%x}
+source ~/.zshrc.custom
+test -f ~/.zshrc.local && source ~/.zshrc.local
+test -f ~/.zshrc.local && source ~/.zshrc.local
+test -f ~/.zshrc.local && source ~/.zshrc.local
