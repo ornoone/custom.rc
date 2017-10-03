@@ -1,3 +1,9 @@
+if [ ! -e ~/.oh-my-zsh/custom/themes/powerlevel9k ];
+then
+  echo "cloning powerlevel9k"
+  git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+fi
+
 export DEFAULT_USER="dbernard"
 export TERM="xterm-256color"
 
