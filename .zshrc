@@ -39,7 +39,7 @@ else
 	ZSH_THEME="agnoster"
 	plugins=(git debian docker systemd python common-aliases dirhistory pip npm django)
 fi
-ZLE_RPROMPT_INDENT=0 
+# ZLE_RPROMPT_INDENT=0 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
