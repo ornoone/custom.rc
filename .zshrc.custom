@@ -1,5 +1,6 @@
 test -f /usr/share/virtualenvwrapper/virtualenvwrapper.sh && source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 alias workon.='workon $(basename $(pwd))'
+EDITOR=vim
 
 alias ds='docker service'
 alias dr='docker run --rm -it'
