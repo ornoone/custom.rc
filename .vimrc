@@ -1,8 +1,8 @@
 " reglages commun {{{1
 
-set softtabstop=2
+set softtabstop=0
 "taille des tabulation
-set ts=2
+set tabstop=2
 "affiche numero de ligne
 set nu 
 
@@ -12,6 +12,7 @@ filetype indent on
 filetype plugin indent on
 "transforme les espace d'indentation en tabulation
 set expandtab
+set smarttab
 "no compatible
 set nocp
 "
