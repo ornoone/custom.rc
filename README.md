@@ -18,3 +18,31 @@ all my personal .rc files.
 easy unpack : 
 
     curl -L  https://api.github.com/repos/ornoone/custom.rc/tarball | tar  xvz --strip-components=1  --exclude='LICENSE' --exclude='README.md'
+
+further customisation for servers 
+---------------------------------
+
+instal requirements:
+    
+    pip install powerline-status
+    apt-get install linuxlogo lolcat figlet 
+    
+    cat << 'EOF' > /etc/rc.local 
+    #!/bin/sh
+    linuxlogo > /etc/motd
+
+    printShinySeeded() {
+    
+      local seed=$( echo $1 | python3 -c 'import sys, functools; print(functools.reduce(lambda a, b: a+b, (ord(l) for l in sys.stdin.read())))')
+      figlet -w 119 $1 | /usr/games/lolcat -f -S ${seed}
+    }
+    printShinySeeded $(hostname) >>  /etc/motd
+    exit 0
+    EOF
+    
+snipets
+-------
+
+sudoers: to keep your home when you do `sudo -s`, so multiple user can keep their history and rc's while root
+
+    Defaults        env_keep= "HOME EDITOR"
