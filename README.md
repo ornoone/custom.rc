@@ -46,3 +46,5 @@ snipets
 sudoers: to keep your home when you do `sudo -s`, so multiple user can keep their history and rc's while root
 
     Defaults        env_keep= "HOME EDITOR"
+
+add ZSH_DISABLE_COMPFIX=true to .zshrc
