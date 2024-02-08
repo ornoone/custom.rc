@@ -9,7 +9,7 @@ export TERM="xterm-256color"
 
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_MODE="awesome-fontconfig"
-plugins=(gitfast python colored-man-pages colorize command-not-found cp dirhistory docker docker-compose systemd screen sudo zsh-syntax-highlighting)
+plugins=(gitfast python colored-man-pages colorize command-not-found cp dirhistory docker docker-compose systemd screen sudo zsh-syntax-highlighting history-substring-search)
 # /!\ zsh-syntax-highlighting and then zsh-autosuggestions must be at the end
 
 function post_zsh_init () {
