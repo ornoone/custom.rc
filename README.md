@@ -4,7 +4,7 @@ custom.rc
 all my personal .rc files.
 
 - use oh-my-zsh: 
-    `apt-get install -y zsh git curl && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+    `apt-get install -y zsh git curl zsh-syntax-highlighting && sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
 - use theme agnoster
 - use plugins : git debian docker systemd python common-aliases dirhistory pip npm django
 - set custom aliases : 
@@ -24,7 +24,7 @@ further customisation for servers
 
 instal requirements:
     
-    pip install powerline-status
+    pip3 install powerline-status
     apt-get install linuxlogo lolcat figlet 
     
     cat << 'EOF' > /etc/rc.local 
