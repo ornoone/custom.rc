@@ -17,7 +17,9 @@ all my personal .rc files.
 
 easy unpack : 
 
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
     curl -L  https://api.github.com/repos/ornoone/custom.rc/tarball | tar  xvz --strip-components=1  --exclude='LICENSE' --exclude='README.md'
+    ln -s .zshrc.theme.d/V1rgul.zsh .zshrc.theme
 
 further customisation for servers 
 ---------------------------------
