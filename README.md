@@ -21,7 +21,8 @@ easy unpack :
     curl -L  https://api.github.com/repos/ornoone/custom.rc/tarball | tar  xvz --strip-components=1  --exclude='LICENSE' --exclude='README.md'
     ln -s .zshrc.theme.d/V1rgul.zsh .zshrc.theme
     pip3 install powerline-status --break-system-packages
-    sudo apt-get install vim-nox
+    sudo apt-get install vim-nox python3-pip
+    sudo pip3 install powerline-status
 
 further customisation for servers 
 ---------------------------------
